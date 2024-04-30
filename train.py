@@ -207,7 +207,7 @@ if __name__ == "__main__":
     parser.add_argument("--start_checkpoint", type=str, default = None)
     parser.add_argument("--iterations", nargs="+", type=int, default=7000)
     args = parser.parse_args(sys.argv[1:])
-    args.save_iterations.append(args.iterations)
+    #args.save_iterations.append(args.iterations)
     
     print("iterations: ", args.iterations)
     print("Optimizing " + args.model_path)
